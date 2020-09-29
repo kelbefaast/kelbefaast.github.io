@@ -1,0 +1,24 @@
+body{
+    background-color: #444;
+    color: #FFC;
+    font-family: verdana;
+    max-width: 1920px;
+}
+header{
+    background-color: darkblue;
+    color: orangered;
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+    position: relative;
+}
+.return{
+    position: absolute;
+    left: -40px; top: -40px;
+    height: 30px; font-size: 20px;
+    padding-top: 0px;
+}
+header h1{
+    display: inline;
+    border-bottom: 2px solid orangered;
+}
