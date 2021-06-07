@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+
+<title>Picture Perfect | Capture the Best</title>
+
+<style>
+    *{
+        margin: 0px; padding: 0px; border: 0px; box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(110, 114, 160);
+        font-family: sans-serif;
+    }
+    header{
+        display: flex; flex-flow: row nowrap; width: 100%;
+        background-color: rgb(90, 94, 131);
+    }
+    header div#heada{
+        width: 20%;
+        padding-left: 10px;
+    }
+    header div#heada h1{
+        font-family:monospace;
+        color: darkgray;
+    }
+    header div#headb{
+        display: flex; flex-flow: column;
+        width: 80%;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    #searchbar{
+        padding-right: 20px;
+        margin: 5px;
+    }
+    #search{
+        width: 450px; height: 40px; 
+    }
+    button#sub{
+        width: 120px; height: 40px; 
+    }
+    #search, button#sub{
+        float: right;
+        font-size: 22px;
+        border: 1px solid black;
+    }
+    header div#headb ul{
+        list-style: none;
+        display: flex;
+    }
+    header div#headb ul li{
+        height: 60px; width: 33%;
+        text-align: center;
+        border: 1px solid gray;
+        font-size: 3em;
+    }
+    header div#headb ul li a{
+        text-decoration: none;
+        color: black;
+        width: 100%; height: 100%;
+        display: block;
+    }
+    header div#headb ul li a:hover{
+        color: grey;
+    }
+    main{
+        width: 30%;
+        margin: 40px auto 0px auto;
+    }
+    form{
+        padding: 20px;
+        font-size: 2em;
+    }
+    form input, textarea{
+        font-size: 1em;
+    }
+    form textarea{
+        width: 390px; height: 200px;
+    }
+    #submit{
+        font-size: 2em;
+        width: 150px; height: 60px; float: right; margin-right: 165px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div id="heada">
+        <a href="index.html"><img src="camera.png" alt="logo" width="200" height="200"></a> 
+    </div>
+    <div id="headb">
+        <div id="searchbar">
+        <button id="sub">Submit</button>
+        <input id="search" type="text" placeholder="Search..">
+    </div>
+    <ul>
+        <li><a href="catalog.html">catalog</li></a>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+    </ul>
+</div>
+</header>
+<main>
+    <form action="post">
+        <label for="name">Name</label> <br>
+        <input type="text" id="name" placeholder="John Smith"> <br>
+        <label for="email">E-Mail</label> <br>
+        <input type="email" id="email" placeholder="jsmith@email.com"> <br>
+        <label for="phone">Phone Number</label> <br>
+        <input type="tel" id="phone" placeholder="555-555-5555"> <br>
+        <label for="message">Message</label> <br>
+        <textarea id="message"></textarea> <br>
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+        </form>
+        <input type="submit" id="submit" value="Submit" onclick="window.location = ('submitted.html')">
+    </form>
+</main>
+
+</body>
+</html>
